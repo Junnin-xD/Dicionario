@@ -53,7 +53,7 @@ public class TrabalhoPAA_LCS {
         }
         System.out.println("Voce quis dizer: " + tokens.get(indice));
 
-        for (int n = lcs + 1; n < tokens.size(); n++) {
+        for (int n = indice + 1; n < tokens.size(); n++) {
 
             if (!verificaPalavraChave(tokens.get(n))) {
                 System.out.print(tokens.get(n) + " ");
